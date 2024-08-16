@@ -16,24 +16,36 @@
   <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <meta name="description" content="ETITE Labs is a tech-based company focused on IT Services and IoT innovation in various sectors.">
-    <meta name="keywords" content="Technology, Information and Internet">
+  <meta name="description"
+    content="ETITE Labs is a tech-based company focused on IT Services and IoT innovation in various sectors.">
+  <meta name="keywords" content="Technology, Information and Internet">
 </head>
 
 <body>
   <div class="grid-container">
 
     <div class="intro">
+
       <video autoplay muted loop id="myVideoo">
         <source src="intro_video.mp4" type="video/mp4">
       </video>
+
       <div class="navbar">
+        <div class="navi">
+          <img src="wname.svg" alt="logo Image" class="logoo">
+          <!-- <div class="hamburger" onclick="toggleMenu()">&#9776;</div> -->
+          <button class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+          </button>
+
+        </div>
+
         <div class="menu">
 
           <div class="dropdown">
-            <button class="dropbtn">Solutions
+            <a href="#" class="dropbtn">Solutions
               <i class="fa fa-caret-down"></i>
-            </button>
+            </a>
             <div class="dropdown-content">
               <li><a href="#">Agriculture</a></li>
               <li><a href="#">Energy</a></li>
@@ -50,9 +62,9 @@
           <li id="nav"><a href="#home">Careers</a></li>
 
           <div class="dropdown">
-            <button class="dropbtn">Resources
+            <a href="#" class="dropbtn">Resources
               <i class="fa fa-caret-down"></i>
-            </button>
+            </a>
             <div class="dropdown-content">
               <li><a href="#">Blogs</a></li>
               <li><a href="#">Newsroom</a></li>
@@ -60,12 +72,46 @@
           </div>
           <li id="nav"><a href="#home">Contact</a></li>
         </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Solutions
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <li><a href="#">Agriculture</a></li>
+              <li><a href="#">Energy</a></li>
+              <li><a href="#">Environment</a></li>
+              <li><a href="#">Government</a></li>
+              <li><a href="#">Mining</a></li>
+            </div>
+          </div>
+          <li id="nav"><a href="#home">Technology</a></li>
+          <li id="nav"><a href="#home">Partners</a></li>
+          <li id="nav"><a href="#home">About</a></li>
+          <li id="nav"><a href="#home">Careers</a></li>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Resources
+              <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Newsroom</a></li>
+            </div>
+          </div>
+          <li id="nav"><a href="#home">Contact</a></li>
+        </div>
+
+      </div>
+
+      <div class="heading_mob">
+        Building a health monitor for the planet
       </div>
 
     </div>
 
     <div class="about">
-      <img src="stars_edit.jpg" alt="image">
+      <img src="stars_edit.jpg" alt="stars image" id="stars">
       <div class="flex">
         <div class="about_content">
           <div id="heading">
@@ -169,14 +215,14 @@
           </div>
 
           <div class="card" id="card_two">
-            <img src="resource.webp" alt="Avatar" style="width:100%">
+            <img src="resource.webp" alt="Avatar" style="width:100%" class="card_img">
             <div class="container">
               <h3><b>Announcement</b></h3>
               <p>Space Introducing 'Aurora' by Pixxel: A Cutting-edge Earth Observation Studio for Simplified Satellite
                 Data Analysis</p>
             </div>
           </div>
-
+          <a href="" target="_blank" class="btn_mob">Read more</a>
         </div>
       </div>
     </div>
@@ -185,32 +231,34 @@
       <div class="foot_content">
         <div class="footer_flex">
           <div class="flexing" id="flex_one">
-          <h4> Imagine the possibilities</h4>
-          <p>Be future ready with the best geospatial dataset for your sector</p>
-          <a href="" target="_blank" class="footer_btn">Get in touch</a>
-          <div id="icons">
-            <i class="fa fa-facebook" style="font-size:24px"></i>
-            <a href="https://www.linkedin.com/company/etite-labs/" target="_blank">
-              <i class="fa fa-linkedin" style="font-size:24px"></i>
-            </a>
-            
-            <i class="fa fa-twitter-square" style="font-size:24px"></i>
-            <i class="fa fa-github" style="font-size:24px"></i>
-          </div>
-        </div>
+            <h4> Imagine the possibilities</h4>
+            <p>Be future ready with the best geospatial dataset for your sector</p>
+            <a href="" target="_blank" class="footer_btn">Get in touch</a>
+            <div id="icons">
+              <i class="fa fa-facebook" style="font-size:24px"></i>
+              <a href="https://www.linkedin.com/company/etite-labs/" target="_blank">
+                <i class="fa fa-linkedin" style="font-size:24px"></i>
+              </a>
 
-        <div class="flexing" id="flex_two">
-           <a href="" target="_blank">About</a>
-           <a href="" target="_blank">Technology</a>
-           <a href="" target="_blank">Careers</a>
-           <a href="" target="_blank">Blogs</a>
-        </div>
+              <i class="fa fa-twitter-square" style="font-size:24px"></i>
+              <i class="fa fa-github" style="font-size:24px"></i>
+            </div>
+          </div>
+
+          <div class="flexing" id="flex_two">
+            <a href="" target="_blank">About</a>
+            <a href="" target="_blank">Technology</a>
+            <a href="" target="_blank">Careers</a>
+            <a href="" target="_blank">Blogs</a>
+          </div>
         </div>
       </div>
       <img src="footer.png" alt="image_of_footer">
     </div>
 
   </div>
+
+  <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
 </body>
 
 </html>
