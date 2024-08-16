@@ -151,9 +151,10 @@ li:hover::before {
     margin-left: 2px;
 }
 
-.dropdown:hover .dropbtn {
-    /* background-color: red; */
-}
+ .dropdown:hover .fa-caret-down {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
 
 
 .dropdown-content {
